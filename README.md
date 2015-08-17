@@ -15,7 +15,8 @@ var modulesGraph = new ModulesGraph();
 
 After that you can call methods on `modulesGraph` object to get dependencies
 and dependant modules for any module.
-All methods accept `filepath` parameter that should be the absolute path to module.
+All methods accept `filepath` parameter that should be the absolute path to module
+and return an array of absolute paths to related modules.
 
 ```
 result = modulesGraph.getImmediateDependencies(filepath);
