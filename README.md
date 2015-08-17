@@ -1,2 +1,30 @@
-# node-modules-graph
-Get module depencencies graph during runtime.
+# Node modules graph
+Small library to get module dependencies info during runtime.
+
+# Installation
+```
+npm install modules-graph
+```
+
+# Usage
+When you instantiate `ModulesGraph` object it will hook into node.js `require`
+function and will log all require calls remembering which module required which.
+```
+var modulesGraph = new ModulesGraph();
+```
+
+After that you can call methods on `modulesGraph` object to get dependencies
+and dependant modules for any module.
+All methods accept `filepath` parameter that should be the absolute path to module.
+
+```
+result = modulesGraph.getImmediateDependencies(filepath);
+result = modulesGraph.getImmediateDependants(filepath);
+result = modulesGraph.getDependencies(filepath);
+result = modulesGraph.getDependants(filepath);
+```
+
+To stop logging dependencies call `restore` method.
+```
+modulesGraph.restore()
+```
