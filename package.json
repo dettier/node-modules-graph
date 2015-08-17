@@ -1,6 +1,6 @@
 {
-  "name": "node-modules-graph",
-  "version": "0.1.0",
+  "name": "modules-graph",
+  "version": "0.1.1",
   "description": "Get module depencencies graph during runtime",
   "main": "index.js",
   "scripts": {
