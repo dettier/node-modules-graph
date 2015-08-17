@@ -1,4 +1,4 @@
-# Node modules graph
+# Node modules graph [![Build Status](https://travis-ci.org/dettier/node-modules-graph.svg?branch=master)](https://travis-ci.org/dettier/node-modules-graph)
 Small library to get module dependencies info during runtime.
 
 # Installation
