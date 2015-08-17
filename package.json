@@ -1,0 +1,27 @@
+{
+  "name": "node-modules-graph",
+  "version": "0.0.1",
+  "description": "Get module depencencies graph during runtime",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dettier/node-modules-graph.git"
+  },
+  "keywords": [
+    "module",
+    "dependency"
+  ],
+  "author": "dettier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dettier/node-modules-graph/issues"
+  },
+  "homepage": "https://github.com/dettier/node-modules-graph",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  }
+}
