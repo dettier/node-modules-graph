@@ -1,12 +1,12 @@
 # Node modules graph [![Build Status](https://travis-ci.org/dettier/node-modules-graph.svg?branch=master)](https://travis-ci.org/dettier/node-modules-graph)
 Small library to get module dependencies info during runtime.
 
-# Installation
+## Installation
 ```
 npm install modules-graph
 ```
 
-# Usage
+## Usage
 When you instantiate `ModulesGraph` object it will hook into node.js `require`
 function and will log all require calls remembering which module required which.
 ```
@@ -27,4 +27,9 @@ result = modulesGraph.getDependants(filepath);
 To stop logging dependencies call `restore` method.
 ```
 modulesGraph.restore()
+```
+
+## Tests
+```
+npm test
 ```
